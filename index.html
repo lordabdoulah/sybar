@@ -297,7 +297,7 @@
                     
                     const end = line.indexOf("]", start);
 
-                    const totalValue = line.substring(start, end).trim();
+                    const totalValue = line.substring(end, start).trim();
                     console.log(totalValue)
                     totals.push(parseFloat(totalValue));
 
