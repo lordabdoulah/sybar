@@ -291,9 +291,9 @@
             // نمشي على كل سطر
             lines.forEach((line, index) => {
                 console.log(`Line ${index + 1}:`, line);
-                if (line.includes(" المجموع: $")){
-                    // const start = line.indexOf("Total: $") + "Total: $".length;
-                    const start = line.indexOf(" المجموع: $") + " المجموع: $".length;
+                if (line.includes("Total: $")){
+                    const start = line.indexOf("Total: $") + "Total: $".length;
+                    // const start = line.indexOf(" المجموع: $") + " المجموع: $".length;
                     
                     const end = line.indexOf("]", start);
 
