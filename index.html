@@ -295,7 +295,7 @@
                     // const start = line.indexOf("Total: $") + "Total: $".length;
                     const start = line.indexOf(" المجموع: $") + " المجموع: $".length;
                     
-                    const end = line.indexOf("]", start);
+                    const end = line.indexOf("[", start);
 
                     const totalValue = line.substring(start, end).trim();
                     console.log(totalValue)
