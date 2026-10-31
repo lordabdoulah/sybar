@@ -292,10 +292,10 @@
             lines.forEach((line, index) => {
                 console.log(`Line ${index + 1}:`, line);
                 if (line.includes("Total: $")){
-                    // const start = line.indexOf("Total: $") + "Total: $".length;
-                    const start = line.indexOf(" المجموع: $") + " المجموع: $".length;
+                    const start = line.indexOf("Total: $") + "Total: $".length;
+                    // const start = line.indexOf(" المجموع: $") + " المجموع: $".length;
                     
-                    const end = line.indexOf("[", start);
+                    const end = line.indexOf("]", start);
 
                     const totalValue = line.substring(start, end).trim();
                     console.log(totalValue)
